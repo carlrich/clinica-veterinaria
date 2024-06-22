@@ -18,7 +18,7 @@
     width: 100%;
 }
 .slider-inicio .imagen{
-    /* el calc() sirve para que el navegador haga una operación matematica, en este caso a toda la seccion visible lo restara el 70px (tamaño de la barra de navegación) si niña */
+    /* el calc() sirve para que el navegador haga una operación matematica, en este caso a toda la seccion visible lo restara el 70px (tamaño de la barra de navegación) */
     height: calc(100vh - 70px);
     object-position: top;
     object-fit: cover;

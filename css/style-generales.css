@@ -1,9 +1,6 @@
 /* Fuente Poppins y Satisfy */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
 
-/* Creacion de variables */
-/* Vamos a utilizar esta para guardar los colores que vamos a utilizar y asi no estra recordando el codigo de color */
-/* puedes cambiar o agregar más de estos colores dependiendo de tus gustos si mi niña :) */
 :root{
     --color-azul: #03045e;
     --color-celeste: #17a2b8;
@@ -70,14 +67,6 @@
     flex-wrap: wrap; /* wrap: recuerdalo como "si sus hijos no caben en una sola linea, bajalos a otra linea" */
     justify-content: center;
     padding: 40px 0;
-    /* Mi niña me refiero a sus hijos a
-    <div class="papa">
-        <h1></h1>
-        <p></p>
-        <div class="hijo"></div>
-    </div>
-    tengan o no una clase "hijo", al estrar dentro de su padre "papa" ya son sus hijos de "papa"
-    */
 }
 /* /////////// Tarjetas final /////////// */
 
@@ -190,11 +179,6 @@ footer i{
 
 
 /* ////////////////////// Estilos muy generales ////////////////////// */
-/* Mi niña esto es muy importante: solo crearemos estos estilos para colores, padding, rellenos, color de texo, etc
-con el fin de NO escribir mucho CSS
-ejemplo de como poner estos estilos a una etiqueta HTML
-<div class="contenido"></div>: a este div se pondra un relleno celeste
-<div class="contenido bg-celeste"></div>: optendra un relleno celeste */
 
 /* Rellenos */
 .bg-celeste{
