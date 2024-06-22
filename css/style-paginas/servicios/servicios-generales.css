@@ -1,0 +1,45 @@
+/* //////////////// Estilos de tarjeta Inicio //////////////// */
+.contenedor-tarjetas{
+    padding-bottom: 30px;
+}
+.tarjeta{
+    background: var(--color-celeste);
+    border: solid 1px transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    min-height: 460px;
+    min-width: 330px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    text-align: center;
+    width: 35%;
+}
+.tarjeta:hover{
+    background: white;
+    border-color: var(--color-celeste);
+    transform: scale(1.025);
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.35));
+}
+.tarjeta img{
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.tarjeta .text h4{
+    font-size: 1.3em;
+}
+.tarjeta .text hr{
+    border-color: var(--color-morado-oscuro);
+    opacity: 1;
+    margin: 10px auto;
+    width: 60%;
+}
+.tarjeta .text p{
+    font-size: 0.9em;
+}
+.mas-informacion{
+    margin: 0;
+    padding-bottom: 30px;
+}
+/* //////////////// Estilos de tarjeta Final //////////////// */

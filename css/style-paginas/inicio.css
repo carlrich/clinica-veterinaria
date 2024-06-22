@@ -1,0 +1,195 @@
+/* /////////// colores unicos de la pagina inicio /////////// */
+:root{
+    --color-uno: #a3c4f3;
+    --color-dos: #cfbaf0;
+    --color-tres: #4ecdc4;
+}
+
+/* /////////// Slider inicio /////////// */
+.contenedor-slider{
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+.contenedor-slider .carousel-item{
+    position: relative;
+}
+.slider-inicio{
+    height: 100%;
+    width: 100%;
+}
+.slider-inicio .imagen{
+    /* el calc() sirve para que el navegador haga una operación matematica, en este caso a toda la seccion visible lo restara el 70px (tamaño de la barra de navegación) si niña */
+    height: calc(100vh - 70px);
+    object-position: top;
+    object-fit: cover;
+    width: 100%;
+}
+/* /////////// Slider final /////////// */
+
+/* /////////// Titulo Slider - Inicio/////////// */
+.titulo-silider-boton{
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.titulo-silider-boton .titulo-slider{
+    border-radius: 4px;
+    background: rgba(207, 186, 240, 0.40);
+    backdrop-filter: blur(9px);
+    color: #FFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 2.5em;
+    font-family: 'Satisfy', cursive;
+    font-weight: 400;
+    line-height: 1em;
+    padding: 10px;
+}
+.titulo-silider-boton .btn-explorar{
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(9px);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+.titulo-silider-boton .btn-explorar:hover{
+    background: rgba(23, 162, 184, 0.50);
+    color: black;
+}
+.titulo-silider-boton .btn-explorar i{
+    color: white;
+    font-size: 0.9em;
+}
+/* /////////// Titulo Slider - Final/////////// */
+
+/* /////////// Atendemos a... - Inicio/////////// */
+.contenedor-tarjetas{
+    row-gap: 80px;
+}
+.tarjeta-servicio{
+    align-items: center;
+    background: white;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 65px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    width: 270px;
+}
+.tarjeta-servicio:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+.tarjeta-servicio:hover .icono-mascota{
+    background: var(--color-celeste);
+    border: 10px solid var(--color-dos);
+    padding: 25px;
+}
+.tarjeta-servicio:hover .icono-mascota img{
+    transform: scale(1.1);
+}
+.tarjeta-servicio .icono-mascota{
+    background: var(--color-uno);
+    border: 0px solid transparent;
+    border-radius: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+    padding: 30px;
+    top: 0; 
+}
+.tarjeta-servicio img{
+    transition: all 0.5s ease-in-out;
+    width: 70px;
+}
+.tarjeta-servicio .btn-tarjeta{
+    background: var(--color-celeste);
+    color: white;
+}
+.tarjeta-servicio .btn-tarjeta:hover{
+    border-color: var(--color-celeste);
+}
+/* /////////// Atendemos a... - Final/////////// */
+
+/* /////////// Nuestra pasion - Inicio /////////// */
+.nuestra-pasion{
+    background: var(--color-tres);
+}
+.nuestra-pasion .container{
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 0;
+}
+.nuestra-pasion .container img{
+    border-radius: 50%;
+    height: 330px;
+    object-fit: cover;
+    width: 330px;
+}
+.nuestra-pasion .texto-nuestra-pasion h2{
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 700;
+}
+.nuestra-pasion .texto-nuestra-pasion hr{
+    opacity: 1;
+    border-color: var(--color-morado-oscuro)
+}
+@media screen and (max-width: 800px) {
+    .nuestra-pasion .container{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .nuestra-pasion .container img{
+        height: 300px;
+        width: 300px;
+    }
+}
+/* /////////// Nuestra pasion - Final /////////// */
+
+/* /////////// Cuidado de mascotas - Inicio /////////// */
+.cuidado-mascotas{
+    padding: 30px 0;
+    text-align: center;
+}
+.cuidado-mascotas > h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.cuidado-mascotas .accordion-item .accordion-body{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    text-align: left;
+}
+.cuidado-mascotas .accordion-item .accordion-body img{
+    height: 250px;
+    object-fit: cover;
+    width: 450px;
+}
+@media screen and (max-width: 800px) {
+    .cuidado-mascotas .accordion-item .accordion-body img{
+        height: 150px;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .cuidado-mascotas .accordion-item .accordion-body{
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+/* /////////// Cuidado de mascotas - Final /////////// */
